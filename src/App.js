@@ -1,13 +1,14 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import Navbar from "./components/Navbar";
-import Main from "./components/Main";
+import Intro from "./components/Intro"
+import Content from "./components/Content"
+import Footer from "./components/Footer"
 
-export default function App() {
+export default function App(){
     return (
-        <body>
-            <Navbar />
-            <Main />
+        <body className="App">
+            <Intro/>
+            <Content/>
+            <Footer/>
         </body>
     )
-} 
+}
