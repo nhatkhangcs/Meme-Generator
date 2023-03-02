@@ -83,6 +83,11 @@ html{
     /* display: block; */
 }
 
+.content-block{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .intro-email p, .intro-linkedin p{
     display: inline-block;
     text-align: center;
@@ -118,8 +123,9 @@ html{
     text-align: left;
 }
 
-.content-about li{
-    text-decoration: dashed;
+.content-about > ul > li{
+    text-decoration: none;
+    list-style: none;
     color: #CDCDCD;
 }
 
@@ -130,6 +136,7 @@ html{
     margin: -10px auto 10px auto;
     /* margin: 10px auto; */
     color: #CDCDCD;
+    text-decoration: none;
 }
 
 .footer-icon{
