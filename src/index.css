@@ -1,147 +1,96 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
     box-sizing: border-box;
+}
+
+#root {
+    width: 550px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+body {
+    background-color: #E5E5E5;
     margin: 0;
-    padding: 0;
-}
-
-html{
-    height: 100%;
-    background-color: #282D35;
-}
-#root{
-    margin-top: 55px;
-    display: block;
+    display: flex;
     width: 100%;
-    
+    font-family: 'Poppins', sans-serif;
 }
 
-.App{
-    color: white;
-    background-color: black;
-    width: 350px;
-    margin: auto;
-    text-align: center;
-    border-radius: 2.5%;
-    overflow: hidden;
+.my--app{
+    background-color: #FFFFFF;
 }
 
-
-.intro-block{
-    padding-bottom: 20px;
-}
-.content-block{
-    padding-bottom: 20px;   
-}
-
-.App .intro-avt{
-    width: 100%;
+nav {
+    height: 70px;
+    display: flex;
+    padding: 20px 36px;
+    background: #FFFFFF;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
 }
 
-.intro-name{
-    font-weight: 400;
-    padding-top: 10px;
+.gray{
+    color: #918E9B;
 }
 
-.intro-title{
-    color: RGB(161, 127, 26);
+.bold{
+    font-weight: bold;
+}
+
+.nav--logo {
+    max-width: 100px;
+}
+
+section {
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero--photo {
+    max-width: 400px;
+    align-self: center;
+}
+
+.hero--header {
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.hero--text {
+    margin-top: 0;
+}
+
+.card{
+    width: 175px;
     font-weight: 300;
-    padding-top: 10px;
+    font-size: 12px;
+    line-height: 110%;
 }
 
-.intro-web{
-    padding-top: 10px;
-    font-size: 15px;
-    color: #CDCDCD;
-}
-
-
-.intro-columns{
-    margin: auto;
-    padding: 5px 2px 5px 2px;
+.card--img{
     width: 100%;
-    line-height: 35px;
+    border-radius: 9px;
+    height: 235px;
 }
 
-.intro-contact-row > tr{
+.card--stats{
+    display: flex;
+    align-items: center;
+}
+
+.card--stars{
+    height: 14px;
+}
+
+.card--list{
     display: flex;
     justify-content: space-around;
-}
-
-.intro-contact-row > tr > th{
-    font-weight: 400;
-    width: 40%;
-    border-radius: 10%;
-}
-
-.intro-linkedin{
-    background-color: #0e76a8;
-}
-
-.intro-email{
-    background-color: aliceblue;
-    color: black;
-    /* display: block; */
-}
-
-.content-block{
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.intro-email p, .intro-linkedin p{
-    display: inline-block;
-    text-align: center;
-    vertical-align: bottom;
-}
-
-.intro-icon{
-    vertical-align: bottom;
-    margin-bottom: 9px;
-    /* margin-top: 15px; */
-    font-size: 20px;
-    margin-right: 5px;
-}
-.content-about{
-    padding-bottom: 10px;
-}
-
-.content-about h2, .content-about p{
-    text-align: left;
-}
-
-.content h2{
-    font-weight: 400;
-}
-
-.content-about p{
-    font-weight: 200;
-    font-size: 15px;
-    color: #CDCDCD;
-}
-
-.content-about ul{
-    text-align: left;
-}
-
-.content-about > ul > li{
-    text-decoration: none;
-    list-style: none;
-    color: #CDCDCD;
-}
-
-.footer-block{
-    display: flex;
-    width: 70%;
-    justify-content: space-around;
-    margin: -10px auto 10px auto;
-    /* margin: 10px auto; */
-    color: #CDCDCD;
-    text-decoration: none;
-}
-
-.footer-icon{
-    display: inline-block;
-    font-size: 25px;
-    margin-left: -5px;
-    margin-right: -5px;
+    gap: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
