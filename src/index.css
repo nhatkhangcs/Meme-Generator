@@ -83,8 +83,33 @@ html{
     justify-content: center;
     padding-top: 20px;
     padding-bottom: 40px;
+    position: relative;
 }
 
 .form--meme-img{
     width: 70%;
+}
+
+.form--meme-text{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* align-items: center;
+     */
+     text-align: center;
+    font-family: impact, sans-serif;
+    font-size: 2em; 
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    margin: 15px 0; 
+    padding: 5px;
+    width: 80%;
+}
+
+.top{
+    top:20px
+}
+.bottom{
+    bottom: 40px;
 }
