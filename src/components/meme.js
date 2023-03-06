@@ -1,17 +1,20 @@
 import React from "react";
-import memeData from "../assets/memeData"
 export default function Meme() {
-    // let str = "Get a new meme image  🖼";
     const [memeImg, setMemeImg] = React.useState("")
     const [meme, setMeme] = React.useState({
         topText: "",
         bottomText: "",
         randomImage: "http://i.imgflip.com/1bij.jpg",
     })
-    const [allMemeImages, setAllMemeImages] = React.useState(memeData)
+    React.useEffect(() => {
+        fetch("https://api.imgflip.com/get_memes")
+            .then(res => res.json())
+            .then(data => setAllMemeImages(data))
+    },[])
+    const [allMemes, setAllMemeImages] = React.useState()
     function randomFunction(e) {
-        let memesImg = allMemeImages.data.memes
-        let i = Math.floor(Math.random() * allMemeImages.data.memes.length)
+        let memesImg = allMemes.data.memes
+        let i = Math.floor(Math.random() * allMemes.data.memes.length)
         setMeme(meme => {
             return {
                 ...meme,
